@@ -1,4 +1,3 @@
-
 provider "aws" {
     region  = "us-east-2"
 }
@@ -28,3 +27,10 @@ resource "aws_security_group" "Project_1_sg" {
     protocol    = "TCP"
     cidr_blocks = ["0.0.0.0/0"]
   }
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+}
+}1~
