@@ -1,6 +1,6 @@
 ---
 - name: Install Jenkins, Java, and Python
-  hosts: Project1 Ec2 Machines
+  hosts: Project1
   become: true
 
   tasks:
