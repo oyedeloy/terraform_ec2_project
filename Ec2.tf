@@ -4,7 +4,7 @@ provider "aws" {
 
 
 resource "aws_security_group" "Simpli_EC_proj_1" {
-    name   = "terraform created"
+    name   = "terraform create_2d"
   
     ingress {
     from_port   = 22
