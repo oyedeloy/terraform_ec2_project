@@ -8,7 +8,7 @@ pipeline {
         }
        steps {
                  sh 'terraform init'
-                 sh 'terraform apply -auto-approv
+                 sh 'terraform apply -auto-approve
                  
                  ansiblePlaybook(
                     credentialsId: 'ssh_auth',
