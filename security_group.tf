@@ -1,6 +1,6 @@
 #Create security group
 
-resource "aws_security_group" "Project_1_sg" {
+resource "aws_security_group" "Project_1_sg2" {
     name   = "terraform created"
   
     ingress {
