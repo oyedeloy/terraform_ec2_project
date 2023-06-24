@@ -7,6 +7,11 @@ pipeline {
             AWS_SECRET_ACCESS_KEY = credentials('SECRET_KEY')
         }
        steps {
+                steps {
+                 sh 'terraform init'
+                 sh 'terraform apply -auto-approve'
+ 
+                 
                  ansiblePlaybook(
                     credentialsId: 'ssh_auth',
                     inventory: 'inventory',
