@@ -30,6 +30,7 @@ resource "aws_instance" "jump-box" {
     Name        = "Project1_EC2"
     name        = "jumphost"
     provisioner = "Terraform"
+}
 user_data     = <<-EOF
     #!/bin/bash
     sudo apt update -y
