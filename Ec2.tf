@@ -3,8 +3,8 @@ provider "aws" {
 }
 
 
-resource "aws_security_group" "Simpli_EC_proj_221" {
-    name   = "terraform create_32d"
+resource "aws_security_group" "Simpli_EC_proj_2221" {
+    name   = "terraform create_332d"
   
     ingress {
     from_port   = 22
@@ -24,7 +24,7 @@ resource "aws_instance" "jump-box" {
   ami                    = "ami-024e6efaf93d85776"
   instance_type          = "t2.micro"
   key_name               = "devops-key2"
-  vpc_security_group_ids = [aws_security_group.Simpli_EC_proj_221.id]
+  vpc_security_group_ids = [aws_security_group.Simpli_EC_proj_2221.id]
 
   tags = {
     Name        = "Project1_EC2"
