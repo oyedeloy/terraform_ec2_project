@@ -1,4 +1,4 @@
-provider "aws" {
+Bprovider "aws" {
     region  = "us-east-2"
 }
 
@@ -43,6 +43,6 @@ user_data     = <<-EOF
     sudo systemctl enable jenkins
     EOF
   }
-}
+
 
 

@@ -8,13 +8,10 @@ pipeline {
         }
        steps {
                  sh 'terraform init'
+                 sh 'terraform plan'
                  sh 'terraform apply -auto-approve'
                  
-                 ansiblePlaybook(
-                    credentialsId: 'ssh_auth',
-                    inventory: 'inventory',
-                    playbook: 'installapp.yml'
-                 )
+          
         }
       }
    }
